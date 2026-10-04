@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">MilkMate</string>
+    <string name="tagline">Smart Dairy Business &amp; Delivery Management</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_delivery">Delivery</string>
+    <string name="nav_customers">Customers</string>
+    <string name="nav_payments">Payments</string>
+    <string name="nav_expenses">Expenses</string>
+    <string name="nav_inventory">Stock</string>
+    <string name="nav_reports">Reports</string>
+    <string name="nav_staff">Staff</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Auth -->
+    <string name="login_title">MilkMate Login</string>
+    <string name="register_title">Setup Dairy Business</string>
+    <string name="business_name">Business Name</string>
+    <string name="owner_name">Owner Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="login_as_owner">Login / Register as Owner</string>
+    <string name="login_as_staff">Login as Staff</string>
+    <string name="staff_id">Staff ID</string>
+    <string name="staff_pin">Security PIN</string>
+    <string name="business_id">Business ID / Code</string>
+
+    <!-- Delivery & Shifts -->
+    <string name="shift_morning">Morning Shift</string>
+    <string name="shift_evening">Evening Shift</string>
+    <string name="milk_out">Milk Dispatched (OUT)</string>
+    <string name="milk_in">Milk Collected (IN)</string>
+    <string name="copy_previous_day">Copy Previous Day</string>
+    <string name="quick_entry">Quick Entry</string>
+    <string name="cow_milk">Cow Milk</string>
+    <string name="buffalo_milk">Buffalo Milk</string>
+    <string name="quantity_liters">Quantity (Liters)</string>
+    <string name="rate_per_liter">Rate (₹/L)</string>
+    <string name="total_amount">Total Amount (₹)</string>
+
+    <!-- Common Actions -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="export_pdf">Export PDF</string>
+    <string name="export_excel">Export Excel / CSV</string>
+    <string name="sync_now">Sync Now</string>
+    <string name="logout">Logout</string>
+    <string name="language">Language</string>
+</resources>

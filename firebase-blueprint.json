@@ -1,0 +1,113 @@
+{
+  "entities": {
+    "Business": {
+      "collection": "businesses",
+      "fields": {
+        "id": "String",
+        "userId": "String",
+        "businessName": "String",
+        "ownerName": "String",
+        "phone": "String",
+        "businessMode": "String",
+        "supportedMilkTypes": "String",
+        "cowMilkRate": "Number",
+        "buffaloMilkRate": "Number",
+        "pricingMode": "String",
+        "languageCode": "String",
+        "updatedAt": "Timestamp"
+      }
+    },
+    "Customer": {
+      "collection": "customers",
+      "fields": {
+        "id": "String",
+        "userId": "String",
+        "businessId": "String",
+        "name": "String",
+        "phone": "String",
+        "address": "String",
+        "milkType": "String",
+        "dailyQuantity": "Number",
+        "rate": "Number",
+        "outstandingBalance": "Number",
+        "updatedAt": "Timestamp"
+      }
+    },
+    "Delivery": {
+      "collection": "deliveries",
+      "fields": {
+        "id": "String",
+        "userId": "String",
+        "businessId": "String",
+        "customerId": "String",
+        "customerName": "String",
+        "quantityLiters": "Number",
+        "rate": "Number",
+        "totalAmount": "Number",
+        "isDelivered": "Boolean",
+        "deliveryDate": "Number",
+        "shift": "String",
+        "updatedAt": "Timestamp"
+      }
+    },
+    "MilkCollection": {
+      "collection": "milk_collections",
+      "fields": {
+        "id": "String",
+        "userId": "String",
+        "businessId": "String",
+        "farmerId": "String",
+        "farmerName": "String",
+        "quantityLiters": "Number",
+        "fat": "Number",
+        "snf": "Number",
+        "rate": "Number",
+        "totalAmount": "Number",
+        "shift": "String",
+        "dateEpochMidnight": "Number",
+        "updatedAt": "Timestamp"
+      }
+    },
+    "Payment": {
+      "collection": "payments",
+      "fields": {
+        "id": "String",
+        "userId": "String",
+        "businessId": "String",
+        "customerId": "String",
+        "customerName": "String",
+        "amount": "Number",
+        "paymentMode": "String",
+        "date": "Number",
+        "updatedAt": "Timestamp"
+      }
+    },
+    "Expense": {
+      "collection": "expenses",
+      "fields": {
+        "id": "String",
+        "userId": "String",
+        "businessId": "String",
+        "title": "String",
+        "amount": "Number",
+        "category": "String",
+        "date": "Number",
+        "updatedAt": "Timestamp"
+      }
+    },
+    "MilkWastage": {
+      "collection": "milk_wastage",
+      "fields": {
+        "id": "String",
+        "userId": "String",
+        "businessId": "String",
+        "quantityLiters": "Number",
+        "reason": "String",
+        "totalLossAmount": "Number",
+        "date": "Number",
+        "shift": "String",
+        "updatedAt": "Timestamp"
+      }
+    }
+  }
+}

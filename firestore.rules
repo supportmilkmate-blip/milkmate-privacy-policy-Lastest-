@@ -1,0 +1,60 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function isDocOwner() {
+      return isAuthenticated() && (
+        (resource == null && request.resource.data.userId == request.auth.uid) ||
+        (resource != null && resource.data.userId == request.auth.uid)
+      );
+    }
+
+    // Match all user collections
+    match /users/{userId}/{document=**} {
+      allow read, write: if isOwner(userId);
+    }
+
+    // Root collections with userId field ownership
+    match /businesses/{docId} {
+      allow read, write: if isDocOwner();
+    }
+    match /customers/{docId} {
+      allow read, write: if isDocOwner();
+    }
+    match /deliveries/{docId} {
+      allow read, write: if isDocOwner();
+    }
+    match /milk_collections/{docId} {
+      allow read, write: if isDocOwner();
+    }
+    match /payments/{docId} {
+      allow read, write: if isDocOwner();
+    }
+    match /expenses/{docId} {
+      allow read, write: if isDocOwner();
+    }
+    match /milk_wastage/{docId} {
+      allow read, write: if isDocOwner();
+    }
+    match /orders/{docId} {
+      allow read, write: if isDocOwner();
+    }
+    match /inventory/{docId} {
+      allow read, write: if isDocOwner();
+    }
+    match /cattle/{docId} {
+      allow read, write: if isDocOwner();
+    }
+    match /cattle_milking_records/{docId} {
+      allow read, write: if isDocOwner();
+    }
+  }
+}

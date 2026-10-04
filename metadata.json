@@ -1,0 +1,6 @@
+{
+  "name": "MilkMate",
+  "description": "Production-ready dairy business management, deliveries, billing, inventory, and offline synchronization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

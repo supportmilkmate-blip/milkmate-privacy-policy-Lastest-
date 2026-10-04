@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:translateX="10.8"
+        android:translateY="10.8">
+        <!-- Bottle Cap -->
+        <path
+            android:fillColor="#BBDEFB"
+            android:pathData="M44,22 L64,22 A3,3 0 0,1 67,25 L67,28 A2,2 0 0,1 65,30 L43,30 A2,2 0 0,1 41,28 L41,25 A3,3 0 0,1 44,22 Z" />
+        <!-- Bottle Neck -->
+        <path
+            android:fillColor="#E3F2FD"
+            android:pathData="M45,30 L63,30 L64,38 L44,38 Z" />
+        <!-- Bottle Body -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M44,38 C40,43 33,47 33,55 L33,80 C33,84.4 36.6,88 41,88 L67,88 C71.4,88 75,84.4 75,80 L75,55 C75,47 68,43 64,38 Z" />
+        <!-- Milk Droplet / Heart icon in center of bottle -->
+        <path
+            android:fillColor="#1565C0"
+            android:pathData="M54,54 C54,54 44,66 44,72 C44,77.5 48.5,82 54,82 C59.5,82 64,77.5 64,72 C64,66 54,54 54,54 Z" />
+        <!-- Droplet highlight -->
+        <path
+            android:fillColor="#64B5F6"
+            android:pathData="M51,68 C49.5,69.5 48.5,72 48.5,74.5 C48.5,75 49,75 49.5,74.5 C51,73 52.5,70.5 52.5,68.5 C52.5,68 51.5,67.5 51,68 Z" />
+        <!-- Golden Fresh Sparkle -->
+        <path
+            android:fillColor="#FFD54F"
+            android:pathData="M75,34 L77,39 L82,41 L77,43 L75,48 L73,43 L68,41 L73,39 Z" />
+    </group>
+</vector>
